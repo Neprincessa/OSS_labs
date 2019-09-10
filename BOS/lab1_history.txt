@@ -1,0 +1,203 @@
+ 1998  grep -iw --color -m1 bash /etc/passwd
+ 1999  echo "it's hard"
+ 2000  echo 'it'\''s hard'
+ 2001  echo '"Пример"'
+ 2002  whoami
+ 2003  whoaim
+ 2004  whoami
+ 2005  echo "Hello World"
+ 2006  date
+ 2007  cal
+ 2008  man cal
+ 2009  cal 3
+ 2010  cal -3
+ 2011  history
+ 2012  clear
+ 2013  cal -3
+ 2014  history 
+ 2015  pwd
+ 2016  cd  /
+ 2017  cd ..
+ 2018  pwd
+ 2019  ls
+ 2020  ls /var
+ 2021  cd ~
+ 2022  cd
+ 2023  cd ..
+ 2024  pwd
+ 2025  ls
+ 2026  ls -l
+ 2027  man ls
+ 2028  cd anastasia/
+ 2029  ls
+ 2030  ls -l
+ 2031  cd ~
+ 2032  cd ..
+ 2033  pwd
+ 2034  mkdir fruits
+ 2035  cd ~
+ 2036  pwd
+ 2037  mkdir fruits
+ 2038  cd /
+ 2039  mkdir ~/ animals
+ 2040  mkdir ~/animals
+ 2041  touch /tmp/temp
+ 2042  cd ~/fruits
+ 2043  touch apple
+ 2044  touch banana
+ 2045  touch pineapple
+ 2046  touch lion
+ 2047  touch ~/animals/cat.txt
+ 2048  touch ~/animals/dog.txt
+ 2049  touch ~/animals/elephant.txt
+ 2050  man ls
+ 2051  ls -l --time=ctime
+ 2052  ls -l --time=ctime apple
+ 2053  ls b*
+ 2054  ls *a
+ 2055  ls [bi]*
+ 2056  ls b* i*
+ 2057  cp /etc/passwd ~
+ 2058  car /etc/issue
+ 2059  cat /etc/issue
+ 2060  cp /etc/passwd ~/apple
+ 2061  cat apple
+ 2062  cp /etc/issue ~/apple
+ 2063  cat apple
+ 2064  man cp
+ 2065  man cat
+ 2066  cat /etc/issue > ~/apple
+ 2067  cat apple
+ 2068  cat /etc/issue > apple
+ 2069  cat apple 
+ 2070  ls
+ 2071  man cat
+ 2072  mv pineapple pineaple 
+ 2073  ls
+ 2074  mv pineaple pineapple 
+ 2075  ls
+ 2076  mv lion ~/animals
+ 2077  cd ~/animals/
+ 2078  ls
+ 2079  cd ~/fruits
+ 2080  ls
+ 2081  man wc
+ 2082  wc -l /etc/passwd
+ 2083  cd ~
+ 2084  ln -s /etc/passwd passwd_link
+ 2085  ln .bash_history history_hard
+ 2086  ls -l ~/bash_history
+ 2087  ls -l ~/.bash_history
+ 2088  ls 
+ 2089  ls -l private.txt 
+ 2090  ls -lш ~/.bash_history
+ 2091  ls -li ~/.bash_history
+ 2092  ls -li 
+ 2093  ls -li ~/.bash_history
+ 2094  cat history_hard 
+ 2095  man ls
+ 2096  ls -L ~/.bash_history
+ 2097  ls -l ~/.bash_history 
+ 2098  rm fruits/apple
+ 2099  ls
+ 2100  cd fruits/
+ 2101  ls
+ 2102  cd ~
+ 2103  mkdir rmme
+ 2104  rmdir rnme
+ 2105  rmdir rmme
+ 2106  rmdir fruits
+ 2107  rm -fr fruits
+ 2108  cat /etc/passwd /var/log/boot.log
+ 2109  cat /var/log/boot.log /etc/passwd
+ 2110  sudo cat /etc/passwd /var/log/boot.log
+ 2111  cp /etc/init.d/ ~
+ 2112  cp -r /etc/init.d/ ~
+ 2113  rm -ini init.d
+ 2114  rm -in init.d
+ 2115  rmdir init.d
+ 2116  rm -in init.d
+ 2117  r --help
+ 2118  rm --help
+ 2119  rm init.d
+ 2120  rm -init init.d
+ 2121  rm -r init.d
+ 2122* ct -d: -f1 /etc/passwd | sort
+ 2123  man less
+ 2124  man column
+ 2125  cat /etc/passwd
+ 2126  cur -d: -f1,3,4 /etc/passw | column -ts: | less
+ 2127  cut -d: -f1,3,4 /etc/passw | column -ts: | less
+ 2128  cut -d: -f1,3,4 /etc/passwd | column -ts: | less
+ 2129  man cut
+ 2130  cat /etc/passwd
+ 2131  cut -d: -f1,3,4 /etc/passwd | column -ts: | less
+ 2132  man cut
+ 2133  man grep
+ 2134  grep :/bin/bash /etc/passwd | wc -l
+ 2135  man sort
+ 2136  grep :/bin/bash /etc/passwd | sort -r|cat
+ 2137  man rpm
+ 2138  rpm --help
+ 2139  sudo apt install rpm
+ 2140  man rpm 
+ 2141  cut -d: -f1,3 /etc/passwd | column -ts: | less
+ 2142  cut -d: -f1,4 /etc/passwd | column -ts: | less
+ 2143  cut -d: -f1,3 /etc/passwd | column -ts: | less
+ 2144  rpm -qa --qf '%{NAME}: ${SIZE}\n' | sort -rn -k2,2 | 
+ 2145  rpm -qa --qf '%{NAME}: ${SIZE}\n' | sort -rn -k2,2 | head -n 25
+ 2146  rpm -qa --qf '%{NAME}: ${SIZE}\n' |sort -rn -k2,2 | head -n 25
+ 2147  rpm -ql man-db | xargs -l du 2> /dev/null | sort -n
+ 2148  man top
+ 2149  top -b -n1 | sort -d -k1
+ 2150  top -b -n1 | sort -d -k12
+ 2151  top -b -n1 | sort -d -k2
+ 2152  top -b -n1 | tail -n+8 | cut -c7- | tr -s ' ' '\t' | cut -f11,5
+ 2153  car /etc/passwd
+ 2154  cat /etc/passwd
+ 2155  cat /etc/passwd sort -d | tr ":" " "
+ 2156  cat /etc/passwd sort -d -k5 | tr ":" " "
+ 2157  cat /etc/passwd | sort -d -k5 |tr ":" " "
+ 2158  sudo yum install -y git
+ 2159  yum
+ 2160  sudo apt install yum
+ 2161  yum install -y git
+ 2162  sudo yum install -y git
+ 2163  yum-config-manager --enable 
+ 2164  sudo apt install yum-utils
+ 2165  yum install -y git 
+ 2166  sudo yum install -y git 
+ 2167  yum repolist all
+ 2168  yum-config-manager --enable
+ 2169  sudo yum-config-manager --enable
+ 2170  cat user-manual.txt
+ 2171  cd /usr/share/doc/git-*
+ 2172  cat user_manual.txt
+ 2173  ls
+ 2174  cd ~
+ 2175  sudo yum install -y git 
+ 2176  sudo apt-get install -y git 
+ 2177  cat user_manual.tst
+ 2178  cat user_manual.txt
+ 2179  cd /usr/share/doc/git-*
+ 2180  ls
+ 2181  cd ~
+ 2182  cat '/home/anastasia/Загрузки/user-manual.txt' | tr ' ' '\012' | tr '[:upper:]' '[:lower:'] | tr -d '[:punct:]' | grep -v '[^a-z]' | sort | uniq -c | sort -rn | head -5
+ 2183  cat '/home/anastasia/Загрузки/user-manual.txt' | tr -cs '[:alpha:]' '\n' | tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -rn | head -5 
+ 2184  tr '[:lower:]' '[:upper:]' < user-manual.txt | tr -d '[:punct:] \n\t' | fold -w1 | sort | uniq -c | sort -rn | head -5
+ 2185  tr '[:lower:]' '[:upper:]' < '/home/anastasia/Загрузки/user-manual.txt' | tr -d '[:punct:] \n\t' | fold -w1 | sort | uniq -c | sort -rn | head -5
+ 2186  tr -cs '[:alpha:]' '\n' < '/home/anastasia/Загрузки/user-manual.txt' | less | grep -E ........ | sort | uniq -c | sort -rn | head
+ 2187  ping ya.ru
+ 2188  curl wttr.in
+ 2189  hostname -I
+ 2190  curl ifconfig.me
+ 2191  wget https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README-ru.md
+ 2192  less README-ru.md
+ 2193  id
+ 2194  sudo -i
+ 2195  whoami
+ 2196  sudo id
+ 2197  less /var/log/messages
+ 2198  sudo less /var/log/messages
+ 2199  su
+ 2200  history > lab1_history.txt
