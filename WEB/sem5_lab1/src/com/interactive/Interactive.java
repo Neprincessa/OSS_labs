@@ -36,6 +36,9 @@ public class Interactive implements Process {
             menu();
             currentMode = checkMode();
         }
+
+        if (currentMode != 0)
+            System.out.println("Invalid argument");
     }
 
     public void menu () {
