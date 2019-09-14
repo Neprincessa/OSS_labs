@@ -4,7 +4,7 @@ import com.manual.Manual;
 
 public class HashFunc {
 
-    public static Process session;
+    public static Process session = null;
 
     public static void main(String[] args){
         if (args.length == 1 && args[0].equals("-i")) {

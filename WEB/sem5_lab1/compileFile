@@ -1,0 +1,9 @@
+#!/bin/bash
+find . -name '*.java' > source.txt
+cat source.txt 
+javac -classpath ./lib/commons-io-2.6.jar:./lib/commons-codec-1.4.jar -d build @source.txt
+vim MANIFEST.MD 
+cd build/
+jar cvfm ../bin/HashFunc.jar ../MANIFEST.MD * ../lib/
+cd ..
+cd bin/

@@ -5,18 +5,25 @@ import org.apache.commons.codec.digest.DigestUtils;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Interactive implements Process {
+public class Interactive extends Process {
 
     @Override
-    public void start(){
+    public void start() {
         menu();
         int currentMode = checkMode();
+
+        while (currentMode < 0 || currentMode > 3) {
+            System.out.println("Invalid number. Print 0,1 or 2");
+            currentMode = checkMode();
+        }
+        
         while (currentMode > 0 && currentMode < 3) {
             System.out.print("Path: ");
             Scanner sc = new Scanner(System.in);
             String fileName = sc.nextLine();
             String tmp = "null";
             String result = null;
+           
             if (checkFile(fileName)) {
                 try {
                     tmp = readFile(fileName);
@@ -33,19 +40,24 @@ public class Interactive implements Process {
 
                 System.out.println(result);
             }
+
             menu();
             currentMode = checkMode();
+            while (currentMode < 0 || currentMode > 3) {
+                System.out.println("Invalid number. Print 0,1 or 2");
+                currentMode = checkMode();
+            }
         }
 
-        if (currentMode != 0)
-            System.out.println("Invalid argument");
     }
+
 
     public void menu () {
         System.out.println("Tap 1, if you want to use MD5");
         System.out.println("Tap 2, if you want to use SHA256");
         System.out.println("Tap 0, if you want to stop work");
     }
+
 
     public int checkMode() {
         Scanner sc = new Scanner(System.in);
@@ -54,8 +66,9 @@ public class Interactive implements Process {
         if (sc.hasNextInt()) {
             resultInputData = sc.nextInt();
         }
-        else
+        else {
             resultInputData = -1;
+        }
 
         return resultInputData;
     }
