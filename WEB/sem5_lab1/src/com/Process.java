@@ -5,9 +5,8 @@ import java.io.File;
 import java.io.IOException;
 
 public abstract class Process {
-    public void start() {
-        System.out.println("No correct arguments");
-    }
+
+    public abstract void start();
 
     public boolean checkFile(String path) {
         File currentFile = new File(path);
