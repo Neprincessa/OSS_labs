@@ -1,0 +1,69 @@
+    1  sh-keygegen
+    2  sh-keygen
+    3  ssh-keygen
+    4  cat /home/akhudoyarova/.ssh/id_rsa.pub
+    5  ls
+    6  cd 'Видео/
+    7  exit
+    8  cd 'Видео/'
+    9  su
+   10  exit 
+   11  sudo /etc/init.d/vboxdrv setup
+   12  cd test/
+   13  l
+   14  ls
+   15  cd ..
+   16  rm -r test/
+   17  cd test
+   18  history
+   19  mkdir test
+   20  cd test/
+   21  touch file
+   22  ls -l
+   23  chmod ugo-rwx file
+   24  ls -l
+   25  vim file 
+   26  cat file
+   27  chmod u+w file
+   28  ls -l
+   29  ll
+   30  vi test
+   31  vi file
+   32  cat file 
+   33  chmod 210 file
+   34  ll
+   35  chmod 240 file
+   36  ll
+   37  cat file 
+   38  chmod 640 file
+   39  ll
+   40  cat file 
+   41  mkdir dir
+   42  cd dir/
+   43  touch new_file
+   44  ll
+   45  cd ..
+   46  ll
+   47  cd dir/
+   48  echo "file 2" >> new_file 
+   49  cat new_file 
+   50  ls
+   51  cd ..
+   52  ll
+   53  chmod u-x dir/
+   54  ll
+   55  cd dir/
+   56  rm dir/new_file 
+   57  man chown
+   58  chown root file
+   59  ll
+   60  umask 000
+   61  touch file2
+   62  ll
+   63  rm file2
+   64  umask 0000
+   65  touch file2
+   66  ll
+   67  ls -lR
+   68  ls -lR >> ../saveDuplic/lsLR_fromUs 
+   69  history >> ../saveDuplic/hist_fromUs 
