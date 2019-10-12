@@ -1,0 +1,18 @@
+.:
+итого 4
+drw-rwxr-x. 2 akhudoyarova akhudoyarova 22 окт  1 21:57 dir
+-r--r-----. 1 root         akhudoyarova  5 окт  1 21:54 file
+-rw-rw-rw-. 1 akhudoyarova akhudoyarova  0 окт  1 22:18 file2
+
+./dir:
+итого 0
+-????????? ? ? ? ?            ? new_file
+.:
+итого 4
+drwxrwxr-x. 2 akhudoyarova akhudoyarova 22 окт  1 21:57 dir
+-r--r-----. 1 root         akhudoyarova  5 окт  1 21:54 file
+-rw-rw-rw-. 1 akhudoyarova akhudoyarova  0 окт  1 22:18 file2
+
+./dir:
+итого 4
+-rw-rw-r--. 1 akhudoyarova akhudoyarova 7 окт  1 21:58 new_file
