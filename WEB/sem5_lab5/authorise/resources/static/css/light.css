@@ -1,0 +1,23 @@
+body{
+    background-image: url("../images/light.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size:cover
+}
+
+div.card{
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    border-right: 2px solid black;
+    border-radius: 30px;
+    background-color: aliceblue;
+}
+
+div.logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url("../images/light-logo.jpg");
+    background-size: 100%;
+}
