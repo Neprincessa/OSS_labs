@@ -1,4 +1,0 @@
-./src/HashFunc.java
-./src/com/Process.java
-./src/com/manual/Manual.java
-./src/com/interactive/Interactive.java
